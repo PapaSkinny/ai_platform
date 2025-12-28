@@ -33,10 +33,10 @@ with st.sidebar:
 st.sidebar.title("Модули")
 
 pg = st.navigation([
-    st.Page(page_analyst.py, title="Бизнес-Аналитик", icon="📊"),
-    st.Page(page_content.py, title="SMM & Дизайн", icon="🎨"),
-    st.Page(page_review.py, title="Репутация (Отзывы)", icon="⭐"),
-    st.Page(page_rag.py, title="База Знаний (Docs)", icon="📚")
+    st.Page("src/ui/page_analyst.py", title="Бизнес-Аналитик", icon="📊"),
+    st.Page("src/ui/page_content.py", title="SMM & Дизайн", icon="🎨"),
+    st.Page("src/ui/page_review.py", title="Репутация (Отзывы)", icon="⭐"),
+    st.Page("src/ui/page_rag.py", title="База Знаний (Docs)", icon="📚")
 ])
 
 pg.run()
