@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  ai-platform:
+    build: .
+    container_name: ai_platform
+    # Если упадет (из-за памяти), попробует подняться снова
+    restart: always
+    ports:
+      - "8501:8501"
+    volumes:
+      # Важно: сохраняем базу ChromaDB на диск, чтобы не стиралась при перезапуске
+      - ./chroma_data:/app/chroma_data
+      # Пробрасываем .env файл внутрь
+      - ./.env:/app/.env
