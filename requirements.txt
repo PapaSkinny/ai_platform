@@ -1,0 +1,14 @@
+streamlit
+langchain
+langchain-gigachat
+langchain-community
+langchain-experimental
+duckduckgo-search
+pandas
+matplotlib
+plotly
+tavily-python
+python-dotenv
+langchain-chroma
+pypdf 
+sentence-transformers
